@@ -777,7 +777,7 @@ namespace BonCodeAJP13
                     {
                         p_AbortConnection = true;
                         p_Logger.LogMessageAndType("Stream reading problem (2)(" + readCount.ToString() + "), you may have shutdown Tomcat unexpectedly", "warning", BonCodeAJP13LogLevels.BONCODEAJP13_LOG_BASIC);
-                        //p_Logger.LogException(e);
+                        p_Logger.LogException(e);
                     }
                 }
                     

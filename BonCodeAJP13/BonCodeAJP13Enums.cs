@@ -242,7 +242,7 @@ namespace BonCodeAJP13
 
         //enable HeaderDataSupport. Will send non-standard data in header to support cfml operations -- currently adds X-Tomcat-DocRoot
         public static bool BONCODEAJP13_HEADER_SUPPORT = Properties.Settings.Default.EnableHeaderDataSupport; //false
-        public static string BonCodeAjp13_DocRoot = ""; //will be set in CallHandler and override can be passed in with alternate setting DocRoot
+        public static string BonCodeAjp13_DocRoot = Properties.Settings.Default.DocRoot; //will be set in CallHandler and override can be passed in with alternate setting DocRoot
         public static string BonCodeAjp13_PhysicalFilePath = ""; //will be set in CallHandler
 
         //suppressed header list, this should be a comma seperated value (CSV) list of HTTP headers we will not sent to tomcat
